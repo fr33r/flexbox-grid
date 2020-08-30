@@ -1,0 +1,39 @@
+html {
+	margin: 0;
+	padding: 0;
+	background-color: black;
+}
+
+.box {
+	background-color: white;
+	height: 3rem;
+	border: 0.25rem solid red;
+}
+
+.big-box {
+	background-color: white;
+	/*
+	 * The goal is for the big box to be twice as big as the regular box.
+	 * I calculated the height as follows:
+	 *   2 * (regular box height) +
+	 *   2 * (gutter padding; for top and bottom) +
+	 *   2 * (box border size; for top and bottom)
+	 *
+	 *   2 * (3rem) + 2 * (0.5rem) + 2 * (0.25rem) = 7.5rem
+	 */
+	height: 7.5rem; 
+	border: 0.25rem solid red;
+}
+
+.top-gutter {
+	padding-top: 0.5rem;
+}
+
+.bottom-gutter {
+	padding-bottom: 0.5rem;
+}
+
+.gutter {
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
